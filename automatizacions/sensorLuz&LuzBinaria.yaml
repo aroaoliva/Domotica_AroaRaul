@@ -1,1 +1,12 @@
+#sensor de luz binario
+light:
+  - platform: binary
+    name: "luzled"
+    output: light_output
 
+output:
+  - id: light_output
+    platform: gpio
+    pin:
+      number: GPIO16 
+      inverted: true 
